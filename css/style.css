@@ -33,9 +33,42 @@ nav {
     font-size: 3rem;
     font-family: 'Syne', sans-serif;
     font-weight: 700;
-    color: var(--naranja-salsa)
+    color: var(--naranja-salsa);
+    letter-spacing: 1px;
+    
 }
+.jh-nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
 
+}
+.jh-nav-links li a {
+    text-decoration: none;
+    color: var(--blanco-crema); /* creo que lo cambiare */
+    font-family: 'Syne', sans-serif;
+    transition: 0.3s;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+.jh-nav-links a:hover {
+    color: var(--naranja-salsa);
+    text-shadow: 0 0 10px var(--naranja-salsa);
+}
+.btns {
+display: flex;
+}
+.btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    font-weight: 600;
+    background-color: var(--naranja-vivo);
+    border: 2px solid var(--naranja-salsa);
+    box-shadow: 0 0 10px var(--naranja-salsa);
+
+
+
+}
 
 
 
