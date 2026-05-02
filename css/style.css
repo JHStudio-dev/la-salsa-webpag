@@ -20,12 +20,14 @@
 
  /*Aqui hare lo de la navbar*/
 nav {
-    width: 100%;
-    padding: 1rem 5%;
-    background-color: var(--negro-fondo);
-    border-bottom: 1px solid var(--naranja-vivo);
-    backdrop-filter: blur(15px);
-    margin-bottom: 2rem;
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%; 
+    background-color: var(--negro-fondo); /
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 
 }
 
@@ -65,8 +67,8 @@ display: flex;
     background-color: var(--naranja-vivo);
     border: 2px solid var(--naranja-salsa);
     box-shadow: 0 0 10px var(--naranja-salsa);
-
-
+    cursor: pointer;
+    transition: 0.3s;
 
 }
 
