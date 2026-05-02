@@ -18,8 +18,8 @@
 
  }
 
- /*Aqui hare lo de la navbar*/
-nav {
+ /*casi terminada*/
+.jh-navbar {
    display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,11 +29,19 @@ nav {
     top: 0;
     z-index: 1000;
     margin-bottom: 2rem;
-    background: rgba(10, 10, 10, 0.8); /
-    backdrop-filter: blur(10px);
+    background: rgba(10, 10, 10, 0.7);
+    backdrop-filter: blur(12px);     
+    -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(160, 160, 160, 0.1);
     box-shadow: 0 4px 15px rgba(10, 10, 10, 0.5);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 
+}
+.jh-navbar.navbar-scrolled {
+    padding: 0.8rem 5%;
+    background: rgba(10, 10, 10, 0.95); /
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid var(--naranja-salsa);
 }
 
 .jh-logo {
@@ -47,7 +55,7 @@ nav {
 .jh-nav-links {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 2.5rem;
 
 }
 .jh-nav-links li a {
