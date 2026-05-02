@@ -24,10 +24,15 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 5%; 
-    background-color: var(--negro-fondo); /
+    background-color: var(--negro-fondo); 
     position: sticky;
     top: 0;
     z-index: 1000;
+    margin-bottom: 2rem;
+    background: rgba(10, 10, 10, 0.8); /
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(160, 160, 160, 0.1);
+    box-shadow: 0 4px 15px rgba(10, 10, 10, 0.5);
 
 }
 
@@ -46,12 +51,15 @@ nav {
 
 }
 .jh-nav-links li a {
-    text-decoration: none;
-    color: var(--blanco-crema); /* creo que lo cambiare */
-    font-family: 'Syne', sans-serif;
-    transition: 0.3s;
-    font-size: 1.05rem;
+    font-family: 'Syne', sans-serif; /* No se si cambiar la fuente, no me convence */
     font-weight: 600;
+    color: var(--blanco-crema);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    position: relative;
+    
 }
 .jh-nav-links a:hover {
     color: var(--naranja-salsa);
@@ -61,15 +69,17 @@ nav {
 display: flex;
 }
 .btn {
-    padding: 0.5rem 1.5rem;
-    border-radius: 30px;
-    font-weight: 600;
-    background-color: var(--naranja-vivo);
-    border: 2px solid var(--naranja-salsa);
-    box-shadow: 0 0 10px var(--naranja-salsa);
+    background-color: var(--naranja-salsa);
+    padding: 0.8rem 2rem;
+    border-radius: 50px; 
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(232, 86, 10, 0.3); 
+    border: 1px solid rgba(255, 101, 20, 0.2);
     cursor: pointer;
-    transition: 0.3s;
-
+}
+.btn:hover {
+    transform: translateY(-2px);
+    background-color: var(--naranja-vivo);
 }
 
 
